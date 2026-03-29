@@ -32,14 +32,16 @@ p {
 }
 
 .heart {
+ .name {
   position: fixed;
-  bottom: -10px;
-  font-size: 20px;
-  animation: float 6s linear infinite;
-  color: #ff66a3;
+  bottom: -20px;
+  font-size: 18px;
+  color: #ff4d88;
+  animation: floatName 7s linear infinite;
+  font-weight: bold;
 }
 
-@keyframes float {
+@keyframes floatName {
   0% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(-100vh); opacity: 0; }
 }
