@@ -116,7 +116,22 @@ setInterval(() => {
 function showMessage() {
   document.getElementById("extra").style.display = "block";
 }
+// Floating hearts
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "💖";
+  heart.style.left = Math.random() * 100 + "vw";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}, 300);
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
